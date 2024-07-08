@@ -24,7 +24,7 @@ const Post = () => {
 		if (isSuccess) {
 			navigate('/admin');
 		}
-	}, [all_post, isError, isLoading, isSuccess, message, navigate, dispatch]);
+	}, [isError, isLoading, isSuccess, message, navigate, dispatch]);
 
 	const validateForm = () => {
 		const errors = {};
@@ -47,7 +47,7 @@ const Post = () => {
 		};
 
 		console.log(form);
-		dispatch(all_post(form));
+		// dispatch(all_post(form));
 	};
 
 	return (

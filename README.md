@@ -37,3 +37,8 @@ This assessment was done using PHP/Laravel. I decided to use Laravel since no pr
 8. run `php artisan db-seed`
 9. run `php artisan migrate`
 10. Your application should be up and running, get the endpoints from the postman collection above and make requests
+
+### Instructions to run frontend application
+1. CD to the frontend directory
+2. run `npm install` to install all packages
+3. run `npm run start`

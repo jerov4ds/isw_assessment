@@ -143,19 +143,19 @@ const SignUp = () => {
 									<p className="error">{errors.password_confirmation}</p>
 								)}
 							</div>
-							<div className="mb-3">
-								<label htmlFor="plan" className="form-label">
-									Plan:
-								</label>
-								<input
-									type="text"
-									className="form-control"
-									placeholder="Enter plan"
-									value={plan}
-									onChange={(e) => setPlan(e.target.value)}
-								/>
-								{errors.plan && <p className="error">{errors.plan}</p>}
-							</div>
+							{/*<div className="mb-3">*/}
+							{/*	<label htmlFor="plan" className="form-label">*/}
+							{/*		Plan:*/}
+							{/*	</label>*/}
+							{/*	<input*/}
+							{/*		type="text"*/}
+							{/*		className="form-control"*/}
+							{/*		placeholder="Enter plan"*/}
+							{/*		value={plan}*/}
+							{/*		onChange={(e) => setPlan(e.target.value)}*/}
+							{/*	/>*/}
+							{/*	{errors.plan && <p className="error">{errors.plan}</p>}*/}
+							{/*</div>*/}
 						</div>
 						<div className="col-lg-6">
 							<div className="mb-3">
@@ -212,7 +212,7 @@ const SignUp = () => {
 								{errors.mobile && <p className="error">{errors.mobile}</p>}
 							</div>
 						</div>
-						<div className="row m-0">
+						<div className="row">
 							<div className="mb-3 col-lg-12">
 								<label htmlFor="address" className="form-label">
 									Address:
